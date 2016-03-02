@@ -73,7 +73,8 @@
   background-color: rgba(245,245,245,0.99);
 }
 .leftPanel{
-   background-color: rgba(128,135,145,0.99);
+   background-color: rgba(4,167,212,0.99);
+
 }
 .wrap .content .form-group{
   height: 55px;
@@ -84,7 +85,7 @@ label.control-label{
   position: absolute;
   font-size: 16px;
   font-weight: 400;
-  opacity: 0.5;
+  opacity: 0.8;
   margin:0;
   pointer-events:none;
   -webkit-transition: all 200ms ease;
@@ -105,10 +106,10 @@ input.form-control{
   outline: 0;
   padding: 6px 0;
   margin-top: 20px; 
+  padding-right: 34px;
   background-color: transparent;
   overflow: hidden;
   color:#b5b5b5;
-
   border-left: none;
   border-top: none;
   border-right: none;
@@ -185,4 +186,37 @@ label.tips{
 }
 .leftPanel .form-group.focused label.control-label{
   color: #fff;
+}
+.leftPanel .form-group input.form-control{
+  border-bottom: 1px solid #fff;
+}
+.leftPanel .form-group.focused input.form-control{
+  border-bottom: 1px solid #fff;
+}
+.leftPanel .subBtn{
+  color: #00A7D4;
+  background-color:#fff;
+  border-color: #fff;
+}
+.leftPanel .subBtn:hover{
+  color: #fff;
+  background-color: #00A7D4;
+}
+.leftPanel .switchBtn{
+  color: #fff;
+  background-color: transparent;
+}
+.leftPanel .switchBtn:hover{
+  background-color: rgba(20,170,212,0.99);
+}
+
+.showPassBtn{
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  border: none;
+  padding:0;
+  margin-left: -34px;
+
 }
