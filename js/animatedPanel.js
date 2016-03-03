@@ -13,22 +13,25 @@
 	//toggle show/hide password btn function
 	var btnList = document.getElementsByClassName("showPassBtn");
 	var showPassBtn = btnList.length > 1 ? Array.prototype.slice.call(document.getElementsByClassName("showPassBtn")):btnList;
-	
+	console.log()
 	for(var i=0,len=btnList.length;i<len;i++){
-		var b = btnList[i];
+		var b = showPassBtn[i];
+		console.log(b);
 		b.addEventListener("click",function(event){
 			var btn = event.currentTarget;
 			console.log(btn);
-			var input = event.target.previousElementSibling;
+			var input = event.currentTarget.previousElementSibling;
 			if(input.classList.contains("form-control")){
 				if(input.getAttribute("type") === "password"){
 					input.setAttribute("type","text");
-					btn.innerHTML("Hide");
+					btn.innerText = "Hide";
 				}else{
 					input.setAttribute("type","password");
-					btn.innerHTML ("Show");
+					btn.innerText = "Show";
 				}
 			}
-		});
+		},false);
 	}
+
+
 }());

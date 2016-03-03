@@ -29,14 +29,19 @@
   -webkit-transition: all 250ms linear;
   -moz-transition: all 250ms linear;
   transition: all 250ms linear;
-
-}
-.panelOuter.triggered{
   -moz-transform: translate3d(100%,0,0);
   -webkit-transform: translate3d(100%,0,0);
   -o-transform: translate3d(100%,0,0);
   -ms-transform: translate3d(100%,0,0);
   transform: translate3d(100%,0,0);
+
+}
+.panelOuter.triggered{
+  -moz-transform: translate3d(0%,0,0);
+  -webkit-transform: translate3d(0%,0,0);
+  -o-transform: translate3d(0%,0,0);
+  -ms-transform: translate3d(0%,0,0);
+  transform: translate3d(0%,0,0);
 }
 .panelInner{
   width: 200%;
@@ -45,13 +50,18 @@
   -webkit-transition: all 250ms linear;
   -moz-transition: all 250ms linear;
   transition: all 250ms linear;
-}
-.panelInner.triggered{
   -moz-transform: translate3d(-50%,0,0);
   -webkit-transform: translate3d(-50%,0,0);
   -o-transform: translate3d(-50%,0,0);
   -ms-transform: translate3d(-50%,0,0);
   transform: translate3d(-50%,0,0);
+}
+.panelInner.triggered{
+  -moz-transform: translate3d(0%,0,0);
+  -webkit-transform: translate3d(0%,0,0);
+  -o-transform: translate3d(0%,0,0);
+  -ms-transform: translate3d(0%,0,0);
+  transform: translate3d(0%,0,0);
 }
 .panelContent{
   height: 100%;
@@ -226,7 +236,14 @@ label.tips{
   margin-left: -34px;
   color: #fff;
 }
-.showPassBtn:hover {
+.leftPanel .showPassBtn:hover {
   color: #fff;
+  text-decoration: none;
+}
+.rightPanel .showPassBtn{
+  color: #b5b5b5;
+}
+.rightPanel .showPassBtn:hover{
+  color:#b5b5b5;
   text-decoration: none;
 }
